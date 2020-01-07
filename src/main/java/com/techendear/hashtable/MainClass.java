@@ -3,23 +3,21 @@ package com.techendear.hashtable;
 public class MainClass {
 
 	public static void main(String[] args) {
-		Employee employee1 = new Employee("Joi", "Jonas", "UK");
-		Employee employee2 = new Employee("Jams", "Jonas", "UK");
-		Employee employee3 = new Employee("Jatin", "Kumar", "UK");
-		Employee employee4 = new Employee("Joi", "Jamini", "UK");
-		Employee employee5 = new Employee("Joi", "Dumin", "UK");
+		HashObj s1 = new HashObj("Hello","Hello World");
+		HashObj s2 = new HashObj("Java","Hello World");
+		HashObj s3 = new HashObj("Hello","Hello World");
+		HashObj s4 = new HashObj("Python","Hello World");
+		HashObj s5 = new HashObj("World","Hello World");
 
-		MyHashTable hashTable = new MyHashTable();
-		
-		hashTable.put("Jonas", employee1);
-		hashTable.put("Jonas", employee2);
-		hashTable.put("Kumar", employee3);
-		hashTable.put("Jamini", employee4);
-		hashTable.put("Dumin", employee5);
-		
-		//hashTable.printHashTable();
-		System.out.println(hashTable.get("Joi"));
 
+		HashTable hashTable = new HashTable(10);
+		hashTable.put("Hello", s1);
+		hashTable.put("Java", s2);
+		hashTable.put("Python", s3);
+		hashTable.put("Js", s4);
+		hashTable.put("World", s5);
+
+		hashTable.printHash();
 	}
 
 }
