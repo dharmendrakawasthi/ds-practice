@@ -1,19 +1,38 @@
 package com.techendear.ds.array;
 
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Scanner;
+
 public class ArrayPractice {
 
 	public static void main(String[] args) {
-		int[] arr = { 2, 1, 5, 3, -4, 9, 1, -3, -9, -14 };
 
-//		leftRotateArray(arr, 3);
-//		for (int a : arr) {
-//			System.out.println(a);
-//		}
+		Instant start = Instant.now();
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		int[] a = null;
+		for(int i=0; i<t;i++) {
+			int size = sc.nextInt();
+			int d = sc.nextInt();
+			a = new int[size];
 
-		rightRotate(arr, 3);
-		for (int a : arr) {
-			System.out.println(a);
-		}
+			for(int j=0; j<size; j++) {
+				a[j] = sc.nextInt();
+			}
+			
+			rightRotate(a, d);
+			for (int el : a) {
+				System.out.print(el+" ");
+			}
+			System.out.println("");
+
+		}	
+		
+		Instant finish = Instant.now();
+		 
+	    long timeElapsed = Duration.between(start, finish).toMillis();  //in millis
+	    System.out.println("Time::"+timeElapsed);
 	}
 
 	public static void leftRotateArray(int[] a, int n) {
