@@ -1,4 +1,4 @@
-package com.techendear.ds.array;
+package com.techendear.ds;
 
 import java.time.Duration;
 import java.time.Instant;
