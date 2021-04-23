@@ -6,10 +6,12 @@ import java.util.Scanner;
 
 public class ArrayPractice {
 
+	private static Scanner sc;
+
 	public static void main(String[] args) {
 
 		Instant start = Instant.now();
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		int[] a = null;
 		for(int i=0; i<t;i++) {
