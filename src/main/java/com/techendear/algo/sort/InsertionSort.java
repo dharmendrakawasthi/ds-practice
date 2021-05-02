@@ -1,4 +1,4 @@
-package com.techendear.sort;
+package com.techendear.algo.sort;
 
 public class InsertionSort {
 
