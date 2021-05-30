@@ -1,4 +1,4 @@
-package com.techendear.recursion;
+package com.techendear.other.recursion;
 
 public class DirectRecuer {
 
