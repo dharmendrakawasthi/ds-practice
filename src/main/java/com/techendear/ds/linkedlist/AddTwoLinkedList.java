@@ -1,4 +1,4 @@
-package com.techendear.ds.ll;
+package com.techendear.ds.linkedlist;
 
 public class AddTwoLinkedList {
 
